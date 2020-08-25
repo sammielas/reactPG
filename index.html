@@ -15,10 +15,17 @@
     <body>
         <div id="root"></div>
         <script type="text/babel">
-            let city = "Lagos";
+            
+            const Practice = () => {
+                return (
+                    <div className="heading">
+                    <h1> React Play Ground</h1>
+                    </div>
+                )
+            };
             
             ReactDOM.render(
-                <h1 className="heading">Welcome to {city}</h1>,
+                <Practice />,
                 document.getElementById("root")
             );
         </script>
