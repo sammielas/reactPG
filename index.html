@@ -16,17 +16,20 @@
         <div id="root"></div>
         <script type="text/babel">
             
-            const Practice = ({library, message}) => {
-                return (
-                    <div className="heading">
-                        <h1>Welcome to {library}</h1>
-                        <p>{message}</p>
-                    </div>
-                )
-            };
+            const Student = ({name}) => <h1>{name}</h1>;
+
+            const App = () => (
+                <div>
+                    <Student name="Samson Lasode" />
+                    <Student name="Sewa Lasode" />
+                    <Student name="Stacy Lasode" />
+                    <Student name="Newness Lasode" />
+                    <Student name="Treasure Lasode" />
+                </div>
+            );
             
             ReactDOM.render(
-                <Practice library="React" message="Enjoy!"/>,
+                <App />,
                 document.getElementById("root")
             );
         </script>
